@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import pages.HomePage;
 
-import static common.constants.scooterOrderPage.Questions.*;
+import static common.constants.scooter_order_page.Questions.*;
 
 @RunWith(Parameterized.class)
 public class FaqListTest extends BaseTest {
@@ -22,7 +22,13 @@ public class FaqListTest extends BaseTest {
     public static Object[][] getTextData() {
         return new Object[][]{
                 {FIRST_QUESTION, FIRST_QUESTION_ANSWER},
-                {QUESTION_FROM_MIDDLE_OF_LIST, QUESTION_FROM_MIDDLE_OF_LIST_ANSWER},
+                {SECOND_QUESTION, SECOND_QUESTION_ANSWER},
+                {THIRD_QUESTION, THIRD_QUESTION_ANSWER},
+                {FOURTH_QUESTION, FOURTH_QUESTION_ANSWER},
+                {FIFTH_QUESTION, FIFTH_QUESTION_ANSWER},
+                {SIXTH_QUESTION, SIXTH_QUESTION_ANSWER},
+                {SEVENTH_QUESTION, SEVENTH_QUESTION_ANSWER},
+                {EIGHTH_QUESTION, EIGHTH_QUESTION_ANSWER},
                 {LAST_QUESTION, LAST_QUESTION_ANSWER},
         };
     }

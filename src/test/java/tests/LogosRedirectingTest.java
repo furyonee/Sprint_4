@@ -2,7 +2,7 @@ package tests;
 
 import org.junit.Test;
 import pages.HomePage;
-import pages.pageElements.Header;
+import pages.page_elements.Header;
 
 public class LogosRedirectingTest extends BaseTest {
     Header header = new Header();

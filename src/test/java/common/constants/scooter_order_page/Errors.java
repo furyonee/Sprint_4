@@ -1,4 +1,4 @@
-package common.constants.scooterOrderPage;
+package common.constants.scooter_order_page;
 
 public class Errors {
     public static String FIRST_NAME_INPUT_ERROR_MESSAGE = "Введите корректное имя";

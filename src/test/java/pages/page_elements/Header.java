@@ -1,8 +1,9 @@
-package pages.pageElements;
+package pages.page_elements;
 
 import pages.BasePage;
 
 import static common.constants.Url.ORDER_PAGE;
+import static common.constants.scooter_order_page.OrderDetailInputs.INVALID_ORDER_NUMBER;
 
 public class Header extends BasePage {
     private final String makeOrderButton = ".Header_Nav__AGCXC .Button_Button__ra12g";
@@ -34,7 +35,7 @@ public class Header extends BasePage {
     }
 
     public Header enterInvalidOrderNumber() {
-        fillField(findByClassName(orderNumberField), " ");
+        fillField(findByClassName(orderNumberField), INVALID_ORDER_NUMBER);
         return this;
     }
 

@@ -1,4 +1,4 @@
-package common.constants.scooterOrderPage;
+package common.constants.scooter_order_page;
 
 public class ScooterColors {
     public static String BLACK = "[id='black']";

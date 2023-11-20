@@ -3,8 +3,8 @@ package pages;
 import common.Support;
 import org.junit.Assert;
 
-import static common.constants.scooterOrderPage.Errors.*;
-import static common.constants.scooterOrderPage.OrderDetailInputs.*;
+import static common.constants.scooter_order_page.Errors.*;
+import static common.constants.scooter_order_page.OrderDetailInputs.*;
 import static common.constants.Settings.RUNNING_BROWSER;
 
 public class OrderPage extends BasePage {
@@ -72,9 +72,6 @@ public class OrderPage extends BasePage {
     }
 
     public OrderPage assertOrderConfirmationWindowAppeared() {
-        if (RUNNING_BROWSER.equals("chrome")) {
-            return this;
-        }
         findDisplayedText(
                 "Заказ оформлен",
                 "Номер заказа: ",
