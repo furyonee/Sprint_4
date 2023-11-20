@@ -3,9 +3,9 @@ package pages;
 import common.Support;
 import org.junit.Assert;
 
+import static common.constants.Url.ORDER_PAGE;
 import static common.constants.scooter_order_page.Errors.*;
 import static common.constants.scooter_order_page.OrderDetailInputs.*;
-import static common.constants.Settings.RUNNING_BROWSER;
 
 public class OrderPage extends BasePage {
     private final String firstSubwayStationTitle = ".select-search__options > li > [value='1']";
@@ -111,5 +111,10 @@ public class OrderPage extends BasePage {
         Assert.assertEquals(findByCssSelector(SUBWAY_STATION_INPUT_ERROR_CONTAINER).getText(), SUBWAY_STATION_INPUT_ERROR_MESSAGE);
         Assert.assertEquals(findByCssSelector(PHONE_NUMBER_INPUT_CONTAINER).getText(), PHONE_NUMBER_INPUT_ERROR_MESSAGE);
         return this;
+    }
+
+    public void assertOrderPageIsOpened() {
+        assertCurrentUrlEquals(ORDER_PAGE);
+        findDisplayedText("Для кого самокат");
     }
 }
