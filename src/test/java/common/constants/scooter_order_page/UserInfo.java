@@ -10,5 +10,10 @@ public class UserInfo {
     public static final String ADDRESS = generateRandomStringValue();
     public static final String PHONE_NUMBER = String.valueOf(ThreadLocalRandom.current().nextLong(10000000000L, 100000000000L));
 
+    public static final String FIRST_NAME_ALTERNATIVE = generateRandomStringValue();
+    public static final String LAST_NAME_ALTERNATIVE = generateRandomStringValue();
+    public static final String ADDRESS_ALTERNATIVE = generateRandomStringValue();
+    public static final String PHONE_NUMBER_ALTERNATIVE = String.valueOf(ThreadLocalRandom.current().nextLong(10000000000L, 100000000000L));
+
     public static final String INVALID_ADDRESS = " ";
 }
